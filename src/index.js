@@ -3,13 +3,13 @@ var http = require("http");
 const httpServer = http.createServer(handleServer);
 
 function handleServer(req, res) {
-  if (req.url === "/welcome") {
+  if (req.url === "./welcome") {
     // res.statusCode = 200;
     res.write("Welcome to Dominos!");
 
     res.end();
   }
-  if (req.url === "/contact") {
+  if (req.url === "./contact") {
     // res.statusCode = 200;
     res.write(
       JSON.stringify({
